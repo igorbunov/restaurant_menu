@@ -5,6 +5,7 @@ change .env file
 <br/>
 php artisan migrate:fresh --seed<br/>
 <br/>
+php artisan serve<br/>
 in browser go to /admin<br/>
 login: admin@admin.com<br/>
 pass: 123<br/>

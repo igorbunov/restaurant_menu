@@ -44,7 +44,7 @@
                                 <th>Название</th>
                                 <th>Категория</th>
                                 <th>Позиция</th>
-                                <th></th>
+                                <th style="width: 206px;"></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -53,11 +53,10 @@
                                     <td>{{ $menu->name }}</td>
                                     <td>{{ $menu->category->name }}</td>
                                     <td>
-                                        <div class="d-flex justify-content-around">
+                                        <div class="d-flex justify-content-around" style="width: 50px;">
                                             <div class="change-position" data-url="{{ route('admin.menu.change-position', ['menu' => $menu, 'position' => -1]) }}">
                                                 <i class="fas fa-arrow-up"></i>
                                             </div>
-                                            <div>{{ $menu->position }}</div>
                                             <div class="change-position" data-url="{{ route('admin.menu.change-position', ['menu' => $menu, 'position' => 1]) }}">
                                                 <i class="fas fa-arrow-down"></i>
                                             </div>
