@@ -1,8 +1,10 @@
-composer install
-npm install
-
-php artisan migrate:fresh --seed
-
-in browser go to /admin
-login: admin@admin.com
-pass: 123
+composer install<br/>
+npm install<br/>
+<br/>
+change .env file
+<br/>
+php artisan migrate:fresh --seed<br/>
+<br/>
+in browser go to /admin<br/>
+login: admin@admin.com<br/>
+pass: 123<br/>
