@@ -8,7 +8,9 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $categories = Category::with('menus')->get();
+        $categories = Category::with('menus')
+            ->orderBy('position', 'ASC')
+            ->get();
 
         return view('menu', compact('categories'));
     }
