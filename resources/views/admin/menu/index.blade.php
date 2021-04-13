@@ -16,18 +16,18 @@
                                 @foreach ($categories as $category)
                                     @if ($loop->first)
                                     <option
-                                        data-url="{{ route('admin.dashboard.index') }}"
+                                        data-url="{{ route('admin.menu.index') }}"
                                         @if (is_null($selectedCategory)) selected @endif>-- выберите категорию --</option>
                                     @endif
 
                                     @if (!is_null($selectedCategory) and $selectedCategory->id == $category->id)
                                     <option
                                         selected
-                                        data-url="{{ route('admin.dashboard.index', ['category_id' => $category->id]) }}"
+                                        data-url="{{ route('admin.menu.index', ['category_id' => $category->id]) }}"
                                         value="{{ $category->id }}">{{ $category->name }}</option>
                                     @else
                                     <option
-                                        data-url="{{ route('admin.dashboard.index', ['category_id' => $category->id]) }}"
+                                        data-url="{{ route('admin.menu.index', ['category_id' => $category->id]) }}"
                                         value="{{ $category->id }}">{{ $category->name }}</option>
                                     @endif
 
